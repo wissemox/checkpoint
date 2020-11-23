@@ -1,0 +1,54 @@
+
+//PROCEDURE
+PROCEDURE dot_product (var A :INTEGER)
+VAR
+    i : INTEGER =  0  ;
+    v2 : ARRAY_OF INTEGER[1];
+    v1 : ARRAY_OF INTEGER[1];
+BEGIN
+    v1 : = {x ,y }
+    v2 : = {x, y }
+    FOR i FROM 0 TO v1.length-1 STEP step  DO
+    A := v1[i]*v2[i]+A
+    END_FOR 
+    IF (A==0) THEN
+        write("orthogonal")
+    END_IF 
+END
+ALGORITHM azdaz
+
+VAR
+    var ps : INTEGER 
+BEGIN
+    dot_product(ps) 
+    write(ps)
+END
+
+
+
+//FUNCTION
+FUNCTION dot_product (A :INTEGER)
+VAR 
+    i : INTEGER =  0  ;
+    v2 : ARRAY_OF INTEGER[1];
+    v1 : ARRAY_OF INTEGER[1];
+BEGIN
+    v1 : = {x ,y }
+    v2 : = {x, y }
+    FOR i FROM 0 TO v1.length-1 STEP step  DO
+    A := v1[i]*v2[i]+A
+    END_FOR 
+    IF (A==0) THEN
+        write("orthogonal")
+    END_IF 
+END
+ALGORITHM eazdaz
+
+
+VAR ps : INTEGER ; 
+BEGIN
+    M:=dot_product(ps)
+    write(M)
+END
+
+
